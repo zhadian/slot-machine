@@ -1,0 +1,33 @@
+.reels {
+  width: 88px;
+  background: #fef4a8;
+  height: 161px;
+}
+.anim {
+  filter: blur(3px);
+}
+
+.reels img {
+  width: 100%;
+}
+
+.end img {
+  width: 88%;
+}
+
+@-webkit-keyframes floatBubble {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -600px;
+  }
+}
+@keyframes floatBubble {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -600px;
+  }
+}
