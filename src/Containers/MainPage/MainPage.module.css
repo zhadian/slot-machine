@@ -1,17 +1,3 @@
-.app {
-  top: 50%;
-  right: 0;
-}
-.but {
-  background: #23c7c7;
-  color: white;
-}
 .fixContainer {
   width: 1300px;
-}
-.error {
-  font-size: 8px;
-}
-.outBalance {
-  font-size: 12px;
 }

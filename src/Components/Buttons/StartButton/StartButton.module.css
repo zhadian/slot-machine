@@ -1,0 +1,11 @@
+.app {
+  top: 50%;
+  right: 0;
+}
+.but {
+  background: #23c7c7;
+  color: white;
+}
+.outBalance {
+  font-size: 12px;
+}
