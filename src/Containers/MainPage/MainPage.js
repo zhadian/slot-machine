@@ -101,27 +101,21 @@ const MainPage = () => {
 
   const CalculatePoints = useCallback(
     (top, center, bottom) => {
-      let data = { point: 0, winIds: [] };
-
+      let results = { point: 0, winIds: [] };
       for (let i in winningComb) {
         const { line, value, point, type, id } = winningComb[i];
         const params = { top: top, center: center, bottom: bottom };
-
         for (let j in line) {
-          if (type === "any") {
-            if (findIn(params[line[j]], value)) {
-              data.point += point;
-              data.winIds.push(id);
-            }
-          } else {
-            if (equals(value, params[line[j]])) {
-              data.point += point;
-              data.winIds.push(id);
-            }
+          if (type === "any" && findIn(params[line[j]], value)) {
+            results.point += point;
+            results.winIds.push(id);
+          } else if (type === "triple" && equals(value, params[line[j]])) {
+            results.point += point;
+            results.winIds.push(id);
           }
         }
       }
-      return data;
+      return results;
     },
     [findIn, equals]
   );

@@ -4,7 +4,7 @@ import classes from "./WinBox.module.css";
 
 const WinBox = (props) => {
   const rows = props.winComb?.map((row) => {
-    return <WinRow winIds={props.winIds} row={row} />;
+    return <WinRow key={row.id} winIds={props.winIds} row={row} />;
   });
   return (
     <div className={`position-absolute ${classes.winContainer}`}>
