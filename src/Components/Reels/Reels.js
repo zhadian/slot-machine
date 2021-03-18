@@ -10,8 +10,10 @@ const Reels = (props) => {
     >
       <img alt="background" src={background} />
       {props.totalPoint > 0 ? (
-        <div className={`${classes.circle} ${classes.rainbow}`}>
-          <p>Score</p>
+        <div
+          className={`fs-1 rounded-circle position-absolute d-flex justify-content-center align-items-center flex-column fw-bold ${classes.circle} ${classes.rainbow}`}
+        >
+          <p className="fs-5 m-0">Score</p>
           {props.totalPoint}
         </div>
       ) : null}

@@ -9,10 +9,20 @@ const WinRow = (props) => {
         background: props.background,
         border: showBorder ? "none" : "7px solid #3d4687",
       }}
-      className={`${classes.container} ${showBorder ? classes.rainbow : null}`}
+      className={`d-flex justify-content-center align-items-center  my-1 ps-1 ${
+        classes.container
+      } ${showBorder ? classes.rainbow : null}`}
     >
-      <div className={`${classes.name}`}>{props.row?.name}</div>
-      <div className={`${classes.point}`}>{props.row?.point}</div>
+      <div
+        className={`d-flex justify-content-start align-items-center fw-bold  ${classes.name}`}
+      >
+        {props.row?.name}
+      </div>
+      <div
+        className={` d-flex justify-content-center align-items-center ${classes.point}`}
+      >
+        {props.row?.point}
+      </div>
     </div>
   );
 };

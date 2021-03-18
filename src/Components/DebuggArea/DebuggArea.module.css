@@ -1,0 +1,21 @@
+.container {
+  top: 25px;
+  right: 0px;
+  height: 230px;
+  width: 400px;
+  overflow: hidden;
+}
+.header {
+  background: #fdf3a8;
+  border: 7px solid #3d4687;
+  border-radius: 10px;
+}
+.accordion {
+  top: -200px;
+  right: 0;
+  height: 194px;
+  border-radius: 10px;
+  background-color: #d7f4fa;
+  transition: top 2s;
+  border: 7px solid #3d4687;
+}

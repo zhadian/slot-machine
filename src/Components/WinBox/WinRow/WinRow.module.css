@@ -1,32 +1,18 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
   border-radius: 10px;
   height: 40px;
   background: #fdf3a8;
-  padding-left: 10px;
 }
 .name {
   height: 80%;
   border-right: 3px dashed #3d4687;
   width: 80%;
-  line-height: 50px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 5px;
   font-size: 10px;
-  font-weight: bold;
   color: #3d4687;
 }
 .point {
   height: 80%;
   width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #3d4687;
 }
 

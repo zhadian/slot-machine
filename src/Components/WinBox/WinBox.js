@@ -1,12 +1,13 @@
 import React from "react";
 import WinRow from "./WinRow/WinRow";
+import classes from "./WinBox.module.css";
 
 const WinBox = (props) => {
   const rows = props.winComb?.map((row) => {
     return <WinRow winIds={props.winIds} row={row} />;
   });
   return (
-    <div>
+    <div className={`position-absolute ${classes.winContainer}`}>
       {rows}
       <WinRow
         row={{ name: "Total Points", point: props.totalPoint }}

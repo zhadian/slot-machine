@@ -9,20 +9,9 @@
 .fixContainer {
   width: 1300px;
 }
-.error,
-.outBalance {
-  margin: 5px 0;
-  text-align: center;
-}
 .error {
   font-size: 8px;
 }
 .outBalance {
   font-size: 12px;
-}
-.winContainer {
-  width: 341px;
-  position: absolute;
-  top: 70px;
-  left: -30px;
 }
